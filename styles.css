@@ -5,11 +5,26 @@
 }
 
 body{
-  background-color: aquamarine;
+  background-color: white;
 }
 
 ul{
   list-style-type: none;
+}
+
+.game_container{
+  display: inline-block;
+  background-color: antiquewhite;
+  box-shadow: 5px 5px #8a795d;
+}
+
+.showcase{
+  display: inline-block;
+}
+
+.showcase div ~ div{
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .imeg{
@@ -24,19 +39,20 @@ ul{
 }
 
 .pfp{
+  width: 150px;
 }
 
 .wrapper{
-  background-color: white;
+  background-color: whitesmoke;
   position: relative;
-  border: 15px solid green;
+  
   margin: 100px;
   padding-bottom: 100px;
   margin-right: 300px;
 }
 
 .wrapper .sidebar{
-  position: fixed;
+  position: absolute;
   border-right-style: solid;
   width: 100px;
 }
