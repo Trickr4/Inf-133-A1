@@ -16,6 +16,7 @@ ul{
   display: inline-block;
   background-color: antiquewhite;
   box-shadow: 5px 5px #8a795d;
+  align-items: ="left"
 }
 
 .showcase{
