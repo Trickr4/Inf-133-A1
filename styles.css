@@ -16,7 +16,7 @@ ul{
   display: inline-block;
   background-color: antiquewhite;
   box-shadow: 5px 5px #8a795d;
-  align-items: ="left"
+  align-items: ="left";
 }
 
 .showcase{
@@ -40,6 +40,7 @@ ul{
 }
 
 .pfp{
+  align-items: ="left";
   width: 150px;
 }
 
