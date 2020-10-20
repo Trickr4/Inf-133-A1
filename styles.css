@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +14,17 @@ ul{
   list-style-type: none;
 }
 
-.game_container{
-  display: inline-block;
-  background-color: antiquewhite;
-  box-shadow: 5px 5px #8a795d;
-  align-items: ="left";
+li{
+  font-size: 24px;
+}
+
+.wrapper{
+  background-color: whitesmoke;
+  position: absolute;
+  
+  margin: 100px;
+  padding-bottom: 100px;
+  margin-right: 100px;
 }
 
 .showcase{
@@ -28,44 +36,212 @@ ul{
   margin-bottom: 10px;
 }
 
+/* BOX LAYOUT */
+
+.sidebar{
+  position: absolute;
+  border-right-style: solid;
+  width: 100px;
+}
+
+.content{
+  position: static;
+  margin-left: 110px;
+}
+
+
+/* CONTAINERS */
+.resume_container{
+  display: inline-block;
+  width:100%;
+  max-width: 6000px;
+  height: 100%;
+  padding-bottom: 56.25%; 
+}
+
+.game_container{
+  display: inline-block;
+  background-color: antiquewhite;
+  box-shadow: 5px 5px #8a795d;
+  height: auto;
+  text-align:center;
+}
+
+.pfp_container{
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+}
+
+.itch_container{
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  max-height: 560px;
+  padding-bottom: 56.25%; 
+}
+
+.itch_container2{
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  max-height: 808px;
+  padding-bottom: 56.25%; 
+}
+
+/* IMAGES */
+
+.game_image{
+  max-width: 400px;
+  height: auto;
+}
+
 .imeg{
   position: relative;
   width: 100px;
   height: 100%;
 }
 
-.pfp_container{
-  width: 100px;
-  height: 100px;
-}
-
 .pfp{
-  align-items: ="left";
+  display: inline-block;
   width: 150px;
+  float: left;
+  margin-right: 50px;
 }
 
-.wrapper{
-  background-color: whitesmoke;
-  position: relative;
-  
-  margin: 100px;
-  padding-bottom: 100px;
-  margin-right: 300px;
+
+/* TEXT */
+
+.profile{
+  font-size: 20px;
+  vertical-align:middle;
+  line-height: 28px;
+  padding-top: 5%;
 }
 
-.wrapper .sidebar{
+#g{
+  color: darkorange;
+  font-family: 'Kotta One', serif;
+  font-size-adjust: 1.40;
+  font-weight: bold;
+}
+
+#gc{
+  color: orange;
+  font-family: 'Kotta One', serif;
+  font-size-adjust: .70;
+}
+
+#g1{
+  color: red;
+  font-family: 'Kotta One', serif;
+}
+
+#g1c{
+  color: hotpink;
+  font-family: 'Kotta One', serif;
+  font-size-adjust: .70;
+}
+
+#g2{
+  color: dodgerblue;
+  font-family: 'Kotta One', serif;
+}
+
+#g2c{
+  color: darkseagreen;
+  font-family: 'Kotta One', serif;
+  font-size-adjust: .70;
+}
+
+#g3{
+  color: green;
+  font-family: 'Kotta One', serif;
+}
+
+#g3c{
+  color: orangered;
+  font-family: 'Kotta One', serif;
+  font-size-adjust: .70;
+}
+
+#g4{
+  color: rebeccapurple;
+  font-family: 'Kotta One', serif;
+}
+
+#g4c{
+  color: mediumpurple;
+  font-family: 'Kotta One', serif;
+  font-size-adjust: .70;
+}
+
+/* IFRAME */
+
+.responsive-iframe {
   position: absolute;
-  border-right-style: solid;
-  width: 100px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 960px;
+  max-height: 560px;
+  width: 100%;
+  height: 100%;
 }
 
-.wrapper .content{
-  position: static;
-  margin-left: 110px;
+.responsive-iframe2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 1300px;
+  max-height: 808px;
+  width: 100%;
+  height: 100%;
 }
 
-.wrapper .content .Profile{
-  position: static;
-  width: auto;
-  margin-left: 250px;
+/* RESPONSIVE DESIGN */
+
+@media (min-width: 400px){
+  .game_image{
+    width:100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .pfp{
+  float:none;
+  margin-left: 35%
+  }
+}
+  
+@media (min-width: 950px){
+  .game_image{
+    width:100%;
+    max-width: 200px;
+    height: auto;
+  }
+  .pfp{
+  float:none;
+  margin-left: 35%
+  }
+}
+
+@media (min-width: 1200px){
+  .game_image{
+    width:100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .pfp{
+  display: inline-block;
+  width: 150px;
+  float: left;
+  margin-right: 50px;
+  margin-left: 0%
+}
+}
+
 }
